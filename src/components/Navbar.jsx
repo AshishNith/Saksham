@@ -19,8 +19,8 @@ const Navbar = () => {
   }, [])
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300  ${
-      isScrolled ? 'text-black shadow-lg backdrop-blur-sm font-bold' : 'transparent font-bold'
+    <nav className={`fixed w-full z-50 transition-all duration-300 ${
+      isScrolled ? 'bg-white/20 shadow-lg backdrop-blur-lg' : 'bg-transparent'
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
@@ -31,15 +31,15 @@ const Navbar = () => {
           </div>
 
           <div className="hidden md:flex items-center space-x-8">
-            <a href="/" className={`hover:text-black font-light ${isScrolled ? 'text-gray-600' : 'text-white'}`}>SUITES</a>
-            <a href="/wellness" className={`hover:text-black font-light ${isScrolled ? 'text-gray-600' : 'text-white'}`}>WELLNESS</a>
-            <a href="/dining" className={`hover:text-black font-light ${isScrolled ? 'text-gray-600' : 'text-white'}`}>DINING</a>
-            <a href="/offers" className={`hover:text-black font-light ${isScrolled ? 'text-gray-600' : 'text-white'}`}>LEISURE</a>
-            <a href="/experiences" className={`hover:text-black font-light ${isScrolled ? 'text-gray-600' : 'text-white'}`}>EXPERIENCES</a>
+            <a href="/suites" className={`font-bold transition-colors duration-300 ${isScrolled ? 'text-black hover:text-gray-700' : 'text-white hover:text-gray-200'}`}>SUITES</a>
+            <a href="/wellness" className={`font-bold transition-colors duration-300 ${isScrolled ? 'text-black hover:text-gray-700' : 'text-white hover:text-gray-200'}`}>WELLNESS</a>
+            <a href="/dining" className={`font-bold transition-colors duration-300 ${isScrolled ? 'text-black hover:text-gray-700' : 'text-white hover:text-gray-200'}`}>DINING</a>
+            <a href="/offers" className={`font-bold transition-colors duration-300 ${isScrolled ? 'text-black hover:text-gray-700' : 'text-white hover:text-gray-200'}`}>LEISURE</a>
+            <a href="/experiences" className={`font-bold transition-colors duration-300 ${isScrolled ? 'text-black hover:text-gray-700' : 'text-white hover:text-gray-200'}`}>EXPERIENCES</a>
           </div>
 
           <div className="md:flex items-center space-x-4 hidden">
-            <Button text="BOOK A STAY" fontSize="text-sm" color1="bg-transparent" color2="bg-white" />
+            <Button text="BOOK A STAY" fontSize="text-sm" textColor={`${isScrolled ? 'text-black' : 'text-black'}`} color1="bg-transparent" color2={`${isScrolled ? 'bg-black' : 'bg-white'}`} />
           </div>
 
           <div className="md:hidden">
@@ -58,7 +58,7 @@ const Navbar = () => {
         {isMenuOpen && (
           <div className="md:hidden bg-white">
             <div className="px-2 pt-2 pb-3 space-y-1">
-              <a href="/" className="block px-3 py-2 text-gray-600 hover:text-black font-light">SUITES</a>
+              <a href="/suites" className="block px-3 py-2 text-gray-600 hover:text-black font-light">SUITES</a>
               <a href="/wellness" className="block px-3 py-2 text-gray-600 hover:text-black font-light">WELLNESS</a>
               <a href="/dining" className="block px-3 py-2 text-gray-600 hover:text-black font-light">DINING</a>
               <a href="/offers" className="block px-3 py-2 text-gray-600 hover:text-black font-light">LEISURE</a>
