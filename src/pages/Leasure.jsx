@@ -1,13 +1,13 @@
 import React from 'react'
 
-const Dining = () => {
+const Leasure = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
       <div className="relative h-screen bg-black">
         <div className="absolute inset-0">
           <img
-            src="https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg"
+            src="https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg"
             alt="Hero"
             className="w-full h-full object-cover opacity-60"
           />
@@ -15,41 +15,41 @@ const Dining = () => {
           <div className="absolute inset-0 flex items-center justify-center">
             <div className="text-center">
               <h1 className="text-white text-8xl font-extralight mb-8 tracking-wider">
-                Dining
+                Leisure
               </h1>
               <p className="text-gray-200 text-2xl font-light max-w-2xl mx-auto leading-relaxed">
-                Embark on a culinary journey through our exceptional restaurants
+                Indulge in luxurious amenities and recreational activities
               </p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Restaurant Showcase */}
+      {/* Facilities Showcase */}
       <div className="py-32 bg-white">
         <div className="container mx-auto px-8">
-          <h2 className="text-5xl font-light text-center mb-24 tracking-wide">Our Signature Venues</h2>
+          <h2 className="text-5xl font-light text-center mb-24 tracking-wide">Our Facilities</h2>
           
           <div className="space-y-40">
             <div className="flex flex-col md:flex-row items-center gap-20">
               <div className="md:w-1/2 group">
                 <div className="relative overflow-hidden">
                   <img 
-                    src="https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg"
-                    alt="The Royal Kitchen"
+                    src="https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg"
+                    alt="Swimming Pool"
                     className="w-full h-[600px] object-cover shadow-2xl transform group-hover:scale-105 transition duration-700"
                   />
                   <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition duration-500" />
                 </div>
               </div>
               <div className="md:w-1/2 space-y-8">
-                <h3 className="text-4xl font-light tracking-wide">The Royal Kitchen</h3>
+                <h3 className="text-4xl font-light tracking-wide">Infinity Pool</h3>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Experience the rich heritage of Indian cuisine reimagined for the modern palate. Our master chefs blend traditional recipes with contemporary techniques to create unforgettable flavors.
+                  Immerse yourself in our stunning infinity pool with panoramic views of the city skyline. Perfect for both relaxation and invigorating morning swims.
                 </p>
                 <div className="pt-6">
                   <button className="border-2 border-black px-10 py-4 text-lg hover:bg-black hover:text-white transition duration-300 tracking-wider">
-                    VIEW MENU
+                    LEARN MORE
                   </button>
                 </div>
               </div>
@@ -59,21 +59,21 @@ const Dining = () => {
               <div className="md:w-1/2 group">
                 <div className="relative overflow-hidden">
                   <img 
-                    src="https://images.pexels.com/photos/262978/pexels-photo-262978.jpeg"
-                    alt="Azure"
+                    src="https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg"
+                    alt="Spa"
                     className="w-full h-[600px] object-cover shadow-2xl transform group-hover:scale-105 transition duration-700"
                   />
                   <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition duration-500" />
                 </div>
               </div>
               <div className="md:w-1/2 space-y-8">
-                <h3 className="text-4xl font-light tracking-wide">Azure</h3>
+                <h3 className="text-4xl font-light tracking-wide">Luxury Spa</h3>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  A sophisticated Asian fusion restaurant offering panoramic city views. Innovative dishes combine the best of Eastern and Western culinary traditions.
+                  Rejuvenate your body and soul in our world-class spa. Experience traditional and modern treatments delivered by expert therapists.
                 </p>
                 <div className="pt-6">
                   <button className="border-2 border-black px-10 py-4 text-lg hover:bg-black hover:text-white transition duration-300 tracking-wider">
-                    VIEW MENU
+                    BOOK NOW
                   </button>
                 </div>
               </div>
@@ -83,21 +83,21 @@ const Dining = () => {
               <div className="md:w-1/2 group">
                 <div className="relative overflow-hidden">
                   <img 
-                    src="https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg"
-                    alt="La Terrazza"
+                    src="https://images.pexels.com/photos/4162451/pexels-photo-4162451.jpeg"
+                    alt="Fitness Center"
                     className="w-full h-[600px] object-cover shadow-2xl transform group-hover:scale-105 transition duration-700"
                   />
                   <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition duration-500" />
                 </div>
               </div>
               <div className="md:w-1/2 space-y-8">
-                <h3 className="text-4xl font-light tracking-wide">La Terrazza</h3>
+                <h3 className="text-4xl font-light tracking-wide">Fitness Center</h3>
                 <p className="text-xl text-gray-600 leading-relaxed">
-                  Transport yourself to Italy in our elegant rooftop restaurant. Savor authentic Italian cuisine made with imported ingredients and local produce.
+                  Stay active in our state-of-the-art fitness center featuring premium equipment and personal training services.
                 </p>
                 <div className="pt-6">
                   <button className="border-2 border-black px-10 py-4 text-lg hover:bg-black hover:text-white transition duration-300 tracking-wider">
-                    VIEW MENU
+                    EXPLORE
                   </button>
                 </div>
               </div>
@@ -109,15 +109,15 @@ const Dining = () => {
       {/* Gallery */}
       <div className="py-32 bg-gray-50">
         <div className="container mx-auto px-8">
-          <h2 className="text-5xl font-light text-center mb-20 tracking-wide">Culinary Moments</h2>
+          <h2 className="text-5xl font-light text-center mb-20 tracking-wide">Leisure Moments</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {[
-              "https://images.pexels.com/photos/3338497/pexels-photo-3338497.jpeg",
-              "https://images.pexels.com/photos/3201920/pexels-photo-3201920.jpeg",
-              "https://images.pexels.com/photos/2291367/pexels-photo-2291367.jpeg",
-              "https://images.pexels.com/photos/2122294/pexels-photo-2122294.jpeg",
-              "https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg",
-              "https://images.pexels.com/photos/941861/pexels-photo-941861.jpeg"
+              "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg",
+              "https://images.pexels.com/photos/3757942/pexels-photo-3757942.jpeg",
+              "https://images.pexels.com/photos/4162451/pexels-photo-4162451.jpeg",
+              "https://images.pexels.com/photos/260447/pexels-photo-260447.jpeg",
+              "https://images.pexels.com/photos/3757952/pexels-photo-3757952.jpeg",
+              "https://images.pexels.com/photos/3757937/pexels-photo-3757937.jpeg"
             ].map((src, index) => (
               <div key={index} className="group relative overflow-hidden aspect-square cursor-pointer">
                 <img
@@ -139,4 +139,4 @@ const Dining = () => {
   )
 }
 
-export default Dining
+export default Leasure

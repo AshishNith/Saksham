@@ -4,24 +4,34 @@ import Button from './Button'
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [prevScrollPos, setPrevScrollPos] = useState(0)
+  const [visible, setVisible] = useState(true)
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 0) {
+      const currentScrollPos = window.scrollY
+
+      
+      // Determine if scrolled
+      if (currentScrollPos > 0) {
         setIsScrolled(true)
       } else {
         setIsScrolled(false)
       }
+
+      // Show/hide navbar based on scroll direction
+      setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10)
+      setPrevScrollPos(currentScrollPos)
     }
 
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
-  }, [])
+  }, [prevScrollPos])
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${
       isScrolled ? 'bg-white/20 shadow-lg backdrop-blur-lg' : 'bg-transparent'
-    }`}>
+    } ${visible ? 'translate-y-0' : '-translate-y-full'}`}>
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
@@ -39,7 +49,7 @@ const Navbar = () => {
           </div>
 
           <div className="md:flex items-center space-x-4 hidden">
-            <Button text="BOOK A STAY" fontSize="text-sm" textColor={`${isScrolled ? 'text-black' : 'text-black'}`} color1="bg-transparent" color2={`${isScrolled ? 'bg-black' : 'bg-white'}`} />
+            <Button text="BOOK A STAY" fontSize="text-sm" textColor="text-white" color1="bg-transparent" color2={`${isScrolled ? 'bg-black' : 'bg-white'}`} />
           </div>
 
           <div className="md:hidden">
