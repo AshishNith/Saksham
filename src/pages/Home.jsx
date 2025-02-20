@@ -12,7 +12,7 @@ const Home = () => {
                 Saksham
               </h1>
               <p className="text-gray-400 text-xl md:text-2xl font-light max-w-lg mb-12">
-                The world's most iconic hotel, redefined for the modern era
+                The India's most iconic hotel, redefined for the modern era
               </p>
               <button className="group relative px-8 py-3 overflow-hidden">
                 <span className="absolute inset-0 w-0 bg-white transition-all duration-500 ease-out group-hover:w-full"></span>
@@ -36,7 +36,7 @@ const Home = () => {
               A GLOBAL ICON OF INDIAN LUXURY
             </h2>
             <p className="text-gray-600 leading-relaxed mb-8">
-              Saksham takes hotel design to a new level of modern luxury, and has also redefined the meaning of exceptional hospitality, both in Dubai and around the world.
+              Saksham sets a new standard for luxury hotels, offering unparalleled elegance and world-class hospitality that has earned its reputation as one of the finest hotels in Dubai and across the globe.
             </p>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center">
