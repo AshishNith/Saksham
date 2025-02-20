@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import Button from './Button'
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -18,8 +19,8 @@ const Navbar = () => {
   }, [])
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-white/80 shadow-lg backdrop-blur-sm' : 'transparent'
+    <nav className={`fixed w-full z-50 transition-all duration-300  ${
+      isScrolled ? 'text-black shadow-lg backdrop-blur-sm font-bold' : 'transparent font-bold'
     }`}>
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
@@ -38,13 +39,7 @@ const Navbar = () => {
           </div>
 
           <div className="md:flex items-center space-x-4 hidden">
-            <button className={`px-8 py-3 rounded-sm transition duration-300 ${
-              isScrolled 
-                ? 'bg-black text-white hover:bg-white hover:text-black border border-black' 
-                : 'bg-white text-black hover:bg-black hover:text-white'
-            }`}>
-              BOOK A STAY
-            </button>
+            <Button text="BOOK A STAY" fontSize="text-sm" color1="bg-transparent" color2="bg-white" />
           </div>
 
           <div className="md:hidden">
