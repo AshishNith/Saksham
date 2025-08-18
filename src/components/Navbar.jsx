@@ -44,7 +44,7 @@ const Navbar = () => {
             <a href="/suites" className={`font-bold transition-colors duration-300 ${isScrolled ? 'text-black hover:text-gray-700' : 'text-white hover:text-gray-200'}`}>SUITES</a>
             <a href="/wellness" className={`font-bold transition-colors duration-300 ${isScrolled ? 'text-black hover:text-gray-700' : 'text-white hover:text-gray-200'}`}>WELLNESS</a>
             <a href="/dining" className={`font-bold transition-colors duration-300 ${isScrolled ? 'text-black hover:text-gray-700' : 'text-white hover:text-gray-200'}`}>DINING</a>
-            <a href="/offers" className={`font-bold transition-colors duration-300 ${isScrolled ? 'text-black hover:text-gray-700' : 'text-white hover:text-gray-200'}`}>LEISURE</a>
+            <a href="/leasure" className={`font-bold transition-colors duration-300 ${isScrolled ? 'text-black hover:text-gray-700' : 'text-white hover:text-gray-200'}`}>LEISURE</a>
             <a href="/experiences" className={`font-bold transition-colors duration-300 ${isScrolled ? 'text-black hover:text-gray-700' : 'text-white hover:text-gray-200'}`}>EXPERIENCES</a>
           </div>
 
